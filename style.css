@@ -1,0 +1,318 @@
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.phone {
+	position: relative;
+	border: 8px solid black;
+	border-radius: 40px;
+	height: 600px;
+	width: 300px;
+	background: #ccefff;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.layer-1 {
+	position: absolute;
+	z-index: 1;
+	height: 450px;
+	width: 80px;
+	bottom: 0;
+	right: 60px;
+	animation-name: layer;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+	0% {
+		bottom: 0;
+	}
+	25% {
+		bottom: -80px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+.layer-1 input[type="checkbox"] {
+	position: absolute;
+	appearance: none;
+	cursor: pointer;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+}
+
+.left-ear--outer {
+	background: white;
+	border-radius: 90%;
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	left: 10px;
+}
+
+.left-ear--inner {
+	background: pink;
+	border-radius: 90%;
+	width: 10px;
+	height: 50px;
+	position: absolute;
+	left: 15px;
+	top: 8px;
+}
+.right-ear--outer {
+	background: white;
+	border-radius: 90%;
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	right: 10px;
+}
+
+.right-ear--inner {
+	background: pink;
+	border-radius: 90%;
+	width: 10px;
+	height: 50px;
+	position: absolute;
+	right: 15px;
+	top: 8px;
+}
+
+.head {
+	background: white;
+	border-radius: 50%;
+	height: 80px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+}
+
+.head__eye {
+	background: gray;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	top: 15px;
+	animation-name: blink;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	0% {
+		height: 4px;
+	}
+	5% {
+		transform: translate(0px, 2px);
+		height: 1px;
+	}
+	10% {
+		height: 4px;
+		transform: translate(0px, 0px);
+	}
+}
+
+.head__eye--left {
+	left: 30px;
+}
+
+.head__eye--right {
+	right: 30px;
+}
+.layer-2 {
+	position: absolute;
+	z-index: 2;
+	height: 450px;
+	width: 80px;
+	bottom: 0;
+	left: 60px;
+	animation-name: layer;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.layer-2 input[type="checkbox"] {
+	position: absolute;
+	appearance: none;
+	cursor: pointer;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+}
+
+.layer-3 {
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 220px;
+	height: 400px;
+	background: #ba6d51;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	border-radius: 20px;
+	bottom: 0;
+}
+
+.zigzag {
+	height: 20px;
+	border-radius: 20px;
+	background: linear-gradient(135deg, rgb(104, 160, 104) 25%, transparent 25%) -50px
+			0,
+		linear-gradient(-135deg, rgb(104, 160, 104) 25%, transparent 25%) -50px 0;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Ajusta los valores de sombra según tus preferencias */
+	background-size: 30px 60px;
+}
+
+.layer-4 {
+	position: absolute;
+	z-index: 4;
+	height: 330px;
+	width: 80px;
+	bottom: 0;
+	left: 20px;
+	animation-name: layer;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.layer-4 input[type="checkbox"] {
+	position: absolute;
+	appearance: none;
+	cursor: pointer;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+}
+.layer-5 {
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	width: 195px;
+	height: 280px;
+	background: #ba6d51;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	border-radius: 20px;
+	bottom: 0;
+}
+
+.layer-6 {
+	position: absolute;
+	z-index: 6;
+	height: 230px;
+	width: 80px;
+	bottom: 0;
+	right: 20px;
+	animation-name: layer;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.layer-6 input[type="checkbox"] {
+	position: absolute;
+	appearance: none;
+	cursor: pointer;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+}
+
+.layer-7 {
+	position: absolute;
+	z-index: 7;
+	right: 0;
+	width: 160px;
+	height: 175px;
+	background: #ba6d51;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	border-radius: 20px;
+	bottom: 0;
+}
+.layer-8 {
+	position: absolute;
+	z-index: 8;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 140px;
+	height: 100px;
+	border-radius: 40% 40% 0% 0%;
+	background: rgb(104, 160, 104);
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+}
+.layer-8 div {
+	position: inherit;
+	background: rgb(104, 160, 104);
+	width: 70px;
+	height: 120px;
+	border-radius: 45% 45% 45% 45%;
+	bottom: 0;
+}
+
+.layer-9 {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	width: 60px;
+	height: 80px;
+	border-radius: 40% 40% 0% 40%;
+	background: white;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+}
+.layer-9 div {
+	position: inherit;
+	background: white;
+	left: 20px;
+	width: 100px;
+	height: 60px;
+	border-radius: 45% 45% 45% 45%;
+	bottom: 0;
+}
+
+.layer-10 {
+	position: absolute;
+	z-index: 10;
+	right: -3px;
+	width: 60px;
+	height: 80px;
+	border-radius: 40% 40% 40% 40%;
+	background: white;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+}
+
+.layer-10 div {
+	position: inherit;
+	background: white;
+	right: 20px;
+	width: 100px;
+	height: 60px;
+	border-radius: 45% 45% 0 45%;
+	bottom: 0;
+}
